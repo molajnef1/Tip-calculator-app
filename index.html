@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/style.css">
     <title>Tip-Calculator</title>
 </head>
 <body>
-    
+    <section>
+        <div class="title-container">
+
+            <p class="Title">SPLI</p>
+            <p class="Title">TTER</p>
+        </div>
+            <div class="container">
+            <div class="info">
+                <label for="bill">Bill</label>
+                <div class="input-icon">
+                    <input type="number" name="bill" id="bill" placeholder="0">
+                    <img src="icons/icon-dollar.svg" alt="a dollar icon">
+                </div>
+                <div class="tip-section">
+                    <p>Selected Tip %</p>
+                    <div class="tip-selection">
+                        <button class="btn">5%</button>
+                        <button class="btn">10%</button>
+                        <button class="btn">15%</button>
+                        <button class="btn">25%</button>
+                        <button class="btn">50%</button>
+                        <input class="btn btn-special" type="number" name="custom" id="custom" placeholder="Custom">
+                    </div>
+                </div>
+                <label for="num-people">Number of People</label>
+                <div class="input-icon">
+                    <input type="number" name="num-people" id="num-people" placeholder="0">
+                    <img src="icons/icon-person.svg" alt="person icon">
+                </div>
+            </div>
+            <div class="result">
+                <div class="output-text">
+
+                    <div class="tip-result">
+                        <p>Tip Amount <span>/person</span></p>
+                        <p>$ 0.00</p>
+                    </div>
+                    <div class="tip-result">
+                        <p>total <span>/person</span></p>
+                        <p>$ 0.00</p>
+                    </div>
+                </div>
+                    <button class="btn reset">RESET</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
