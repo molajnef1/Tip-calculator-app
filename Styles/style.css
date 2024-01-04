@@ -55,16 +55,18 @@ section .title-container
 .container
 {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 3rem;
     background-color: var(--White);
-    padding: 3.2rem;
+    padding: 3.2em;
     border-radius: 12px;
-
 }
 .info
 {
     display: flex;
     width: 50%;
+    height: auto;
     flex-direction: column;
 }
 
@@ -144,6 +146,7 @@ img
 .result
 {
     width: 50%;
+    height: auto;
     background-color: var(--Very-dark-cyan);
     border-radius: 9px;
     display: flex;
@@ -156,6 +159,7 @@ img
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 span
@@ -173,4 +177,27 @@ span
     border-radius: 2px;
     color: var(--Very-dark-cyan);
     opacity: .1;
+}
+
+.output-text, 
+.total
+{
+    color: var(--White);
+}
+
+.total
+{
+    margin-top: 3rem;
+}
+
+.per-person
+{
+    opacity: .5 ;
+}
+
+.price
+{
+    color: var(--Strong-cyan);
+    font-size: 3rem;
+    font-weight: 700;
 }
