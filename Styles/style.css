@@ -146,7 +146,6 @@ img
 .result
 {
     width: 50%;
-    height: auto;
     background-color: var(--Very-dark-cyan);
     border-radius: 9px;
     display: flex;
