@@ -18,10 +18,13 @@
         </div>
             <div class="container">
             <div class="info">
-                <label for="bill">Bill</label>
-                <div class="input-icon">
-                    <input type="number" name="bill" id="bill" placeholder="0">
-                    <img src="icons/icon-dollar.svg" alt="a dollar icon">
+                <div>
+
+                    <label for="bill">Bill</label>
+                    <div class="input-icon">
+                        <input class="input" type="number" name="bill" id="bill" placeholder="0">
+                        <img src="icons/icon-dollar.svg" alt="a dollar icon">
+                    </div>
                 </div>
                 <div class="tip-section">
                     <p>Selected Tip %</p>
@@ -34,10 +37,15 @@
                         <input class="btn btn-special" type="number" name="custom" id="custom" placeholder="Custom">
                     </div>
                 </div>
-                <label for="num-people">Number of People</label>
-                <div class="input-icon">
-                    <input type="number" name="num-people" id="num-people" placeholder="0">
-                    <img src="icons/icon-person.svg" alt="person icon">
+                <div>
+                    <div class="label-error">
+                        <label for="num-people">Number of People</label>
+                        <p class="error">Can't be zero</p>
+                    </div>
+                    <div class="input-icon">
+                        <input class="input-error input" type="number" name="num-people" id="num-people" placeholder="0">
+                        <img src="icons/icon-person.svg" alt="person icon">
+                    </div>
                 </div>
             </div>
             <div class="result">
